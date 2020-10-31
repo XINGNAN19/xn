@@ -1,0 +1,103 @@
+.content{
+    width: 1100px;
+    height:auto;
+    background-color:#FFFFFF;
+    margin:80px auto 0 auto;
+}
+
+/* 页眉 */
+.content_header{
+    width: 1078px;
+    height: 60px;
+    margin: 0 auto;
+    border-bottom: 2px solid #000;
+}
+
+/* 心得笔记 */
+.content_header span{
+    font-size: 18px;
+    margin: 20px 0 0 20px;
+    float: left;
+}
+.content_header span:hover{
+    text-decoration: underline
+}
+
+/* 您现在的位置是 */
+.content_header h2{
+    width: 400px;
+    height: 30px;
+    font-size: 14px;
+    color: #666666;
+    line-height: 30px;
+    float: right;
+    margin-top: 20px;
+}
+.content_header h2 a{
+    font-size: 14px;
+    color: #666666;
+}
+
+
+/* 主体内容 */
+.content_main{
+    width: 1078px;
+}
+
+.content_main h1{
+    margin: 10px 0 0 30px;
+}
+
+/* 引子 */
+.content_main_p{
+    height: 95px;
+    background-color: #f7f7f7;
+    margin: 10px 0 30px 30px;
+    padding-top: 10px;
+    line-height: 28px;
+}
+
+.content_text{
+    margin: 10px 0 0 30px;
+}
+
+/* 每段文字 */
+.content_text p{
+    line-height: 30px;
+    font-size: 15px;
+    text-indent:2em;
+    
+}
+
+/* 龙背墙的传说等标题 */
+/* .content_text h4{
+    line-height: 40px;
+    font-size: 16px;
+} */
+
+.content_img{
+    width: 650px;
+    margin: 0 auto;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    background:#1E1E1E;
+    position: absolute;
+    color: white;
+    clear: both;
+    text-align: center;
+    padding-top: 25px;
+    margin: auto 0 0 0
+}
+
+
+
+
+
+
+
+
+
+

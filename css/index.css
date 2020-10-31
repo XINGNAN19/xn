@@ -1,0 +1,615 @@
+/**
+ * Created by Smohan on 14-8-20.
+ */
+ * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+html{
+    width: 100%;
+    min-width: 2000px;
+    /* min-height: 2000px; */
+}
+body {
+    width: 100%;
+    height: 100%;
+    min-width: 2000px;
+    /* min-height: 2000px; */
+    font:normal 100%/1.4 "Open Sans","Microsoft YaHei","微软雅黑","Hiragino Sans GB",Tahoma,Lucida,Verdana,STHeiti,SimSun,'宋体',sans-serif;
+    color:#424242;
+    background:#f0f1f1;
+}
+
+/* 导航栏 */
+a:hover {
+    color:#56a900;
+}
+
+.wraper {
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+header.topbar {
+    width:100%;
+    height:60px;
+    min-width: 2000px;
+    min-height:60px;
+    border-top:2px solid #424242;
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:500;
+    padding:8px 0 4px 0;
+    /* background:#f7f7f8; */
+    background: #ffffff;
+	
+    box-shadow:0 1px 2px rgba(0,0,0,.1);
+	-o-box-shadow:0 1px 2px rgba(0,0,0,.1);
+	-ms-box-shadow:0 1px 2px rgba(0,0,0,.1);
+	-moz-box-shadow:0 1px 2px rgba(0,0,0,.1);
+	-webkit-box-shadow:0 1px 2px rgba(0,0,0,.1);
+}
+
+
+header .logo {
+    display:block;
+    min-width: 200px;
+    width:280px;
+    height:60px;
+    float:left;
+}
+header .nav {
+    float:right;
+    height:100%;
+    margin-right: 200px;
+}
+
+ul.parent li {
+    display:block;
+    float:left;
+    position:relative;
+    padding:0 32px;
+    line-height:60px;
+}
+
+ul.parent li a {
+    display:block;
+    font-size:0.92em;
+    color:#696969;
+    font-weight:600;
+	
+	text-shadow:0 1px 0 rgba(255,255,255,.86);
+	-o-text-shadow:0 1px 0 rgba(255,255,255,.86);
+	-ms-text-shadow:0 1px 0 rgba(255,255,255,.86);
+	-moz-text-shadow:0 1px 0 rgba(255,255,255,.86);
+	-webkit-text-shadow:0 1px 0 rgba(255,255,255,.86);
+}
+
+ul.parent li .lines {
+    display:block;
+    width:0px;
+    height:2px;
+    background:#6bc30d;
+    position:absolute;
+    left:50%;
+    bottom:-5px;
+    
+	transition:all ease-in-out .6s;
+	-o-transition:all ease-in-out .6s;
+	-ms-transition:all ease-in-out .6s;
+	-moz-transition:all ease-in-out .6s;
+	-webkit-transition:all ease-in-out .6s;
+}
+
+ul.parent li:hover .lines,.topbar li.current .lines {
+    color:#56a900;
+    width:100%;
+    left:0;
+}
+
+
+/* 轮播图 */
+
+#container {
+    position: relative;
+    float: left;
+    width: 1000px;
+    height: 562px;
+    margin-left: 15%;
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+#list {
+    position: absolute;
+    z-index: 1;
+    width: 11000px;
+    height: 562px;
+}
+
+#list img {
+    float: left;
+    width: 1000px;
+    height: 562px;
+}
+
+#buttons {
+    position: absolute;
+    left: 400px;
+    bottom: 20px;
+    z-index: 2;
+    height: 10px;
+    width: 200px;
+}
+
+#buttons span {
+    float: left;
+    margin-right: 5px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: #333;
+    cursor: pointer;
+}
+
+#buttons .on {
+    background: orangered;
+}
+
+.arrow {
+    position: absolute;
+    top: 240px;
+    z-index: 2;
+    display: none;
+    width: 40px;
+    height: 40px;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 39px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    background-color: RGBA(166, 166, 166, .5);
+}
+
+#container:hover .arrow {
+    display: block;
+}
+
+#prev {
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border: 1px;
+    border-radius: 50%;
+    
+}
+
+#next {
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border: 1px;
+    border-radius: 50%;
+
+}
+
+/* aside */
+/* 头像 */
+.asides{
+    line-height: 30px;
+    background-color:#231F23;
+    height: 562px;
+    width: 300px;
+    float: right;
+    margin-top: 80px;
+    margin-right: 19%;
+    border: 10px;
+    position: relative;
+}
+.portrait{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.portrait:hover{
+    -moz-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    -o-transform: scale(1.1); 
+    -ms-transform: scale(1.1);
+}
+.portrait1{
+    margin: 30px 10px 0 10px;
+}
+.about{
+    width: auto;
+    height: auto;
+    margin: 7% 0 0 5%;
+    float: left;
+}
+.about_p{
+    float: right;
+    position: absolute;
+    margin: 6% 0 0 15%;
+    color: #FDFAFE;
+}
+.about_said{
+    margin: 50% 0 0 7%;
+    color: #FDFAFE;
+}
+
+/* article */
+/* 推荐文章 */
+.bloglist{
+    width: 1000px;
+    position: absolute;
+    margin: 660px 0 0 300px;
+}
+.bloglist h2{
+    border-bottom: #474645 2px solid;
+    letter-spacing: 2px
+}
+.bloglist h2 p{
+    background: #474645;
+    width: 120px; 
+    color: #fff;
+    padding-left: 15px;
+}
+/* 犯错了怎么办？ */
+.blogs{
+    width: 1000px;
+    height: 275px;
+    position: absolute;
+    margin: 708px 0 0 300px;
+}
+.blogs h3 { 
+
+    font-weight: bold; 
+    margin: 5px 0 15px 0; 
+}
+.blogs h3 a {
+     color: #474645; 
+}
+.blogs h3:hover {
+     text-decoration: underline 
+}
+.blogs figure{
+    width: 25%; 
+    overflow: hidden;
+    float: left;
+}
+.blogs figure img{
+    width: 100%; 
+    margin: auto; 
+    -moz-transition: all 0.5s; 
+    -webkit-transition: all 0.5s; 
+    -o-transition: all 0.5s; 
+    transition: all 0.5s;
+}
+.blogs ul { 
+    float: right; 
+    line-height: 25px; 
+    width: 72%; 
+    color: #474645; 
+}
+
+/* 作者部分 */
+.autor { 
+    overflow: hidden; 
+    width: 100%;
+    height: 26px;
+    line-height: 26px;
+    background: #d6d3d3;
+    display: inline-block;
+    margin: 10px 0 0 0
+}
+.autor span { 
+    margin: 0 10px; 
+}
+.autor span a { 
+    color: #759b08; 
+}
+
+/* 阅读全文 */
+a.readmore{
+    background: #e41635;
+    color: #ffffff;
+    display: block;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    float: right;
+    margin: 40px 5px 0 0;
+}
+/* 阿里云空间选择 */
+.blogs_a{
+    width: 1000px;
+    height: 275px;
+    position: absolute;
+    margin: 957px 0 0 300px;
+}
+.blogs_a h3 { 
+    font-weight: bold; 
+    margin: 15px 0 15px 0; 
+}
+.blogs_a h3 a {
+     color: #474645; 
+}
+.blogs_a h3:hover {
+     text-decoration: underline 
+}
+.blogs_a figure{
+    width: 25%; 
+    overflow: hidden;
+    float: left;
+}
+.blogs_a figure img{
+    width: 100%; 
+    margin: auto; 
+    -moz-transition: all 0.5s; 
+    -webkit-transition: all 0.5s; 
+    -o-transition: all 0.5s; 
+    transition: all 0.5s;
+}
+.blogs_a ul { 
+    float: right; 
+    line-height: 25px; 
+    width: 72%; 
+    color: #474645; 
+}
+a.readmore_a{
+    background: #e41635;
+    color: #ffffff;
+    display: block;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    float: right;
+    margin: 65px 5px 0 0;
+}
+/* 从摄影作品中获取网页颜色搭配技巧 */
+.blogs_b{
+    width: 1000px;
+    height: 275px;
+    position: absolute;
+    margin: 1215px 0 0 300px;
+}
+.blogs_b h3 { 
+    font-weight: bold; 
+    margin: 15px 0 15px 0; 
+}
+.blogs_b h3 a {
+     color: #474645; 
+}
+.blogs_b h3:hover {
+     text-decoration: underline 
+}
+.blogs_b figure{
+    width: 25%; 
+    overflow: hidden;
+    float: left;
+}
+.blogs_b figure img{
+    width: 100%; 
+    margin: auto; 
+    -moz-transition: all 0.5s; 
+    -webkit-transition: all 0.5s; 
+    -o-transition: all 0.5s; 
+    transition: all 0.5s;
+}
+.blogs_b ul { 
+    float: right; 
+    line-height: 25px; 
+    width: 72%; 
+    color: #474645; 
+}
+a.readmore_b{
+    background: #e41635;
+    color: #ffffff;
+    display: block;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    float: right;
+    margin: 40px 5px 0 0;
+}
+/* css3制作的一个魔方 */
+.blogs_c{
+    width: 1000px;
+    height: 275px;
+    position: absolute;
+    margin: 1470px 0 0 300px;
+}
+.blogs_c h3 { 
+    font-weight: bold; 
+    margin: 15px 0 15px 0; 
+}
+.blogs_c h3 a {
+     color: #474645; 
+}
+.blogs_c h3:hover {
+     text-decoration: underline 
+}
+.blogs_c figure{
+    width: 25%; 
+    overflow: hidden;
+    float: left;
+}
+.blogs_c figure img{
+    width: 100%; 
+    margin: auto; 
+    -moz-transition: all 0.5s; 
+    -webkit-transition: all 0.5s; 
+    -o-transition: all 0.5s; 
+    transition: all 0.5s;
+}
+.blogs_c ul { 
+    float: right; 
+    line-height: 25px; 
+    width: 72%; 
+    color: #474645; 
+}
+a.readmore_c{
+    background: #e41635;
+    color: #ffffff;
+    display: block;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    float: right;
+    margin: 100px 5px 0 0;
+}
+
+/* 日历 */
+.calendar_f{
+    width: 300px;
+    height: 250px;
+    background:#231F23;
+    color: #FDFAFE;
+    float: right;
+    position: absolute; 
+    margin: 660px 0 0 1320px;
+  }
+  /**
+   * 设置日历的大小
+   */
+  .calendar{
+    width: 300px;
+    height: 400px;
+    display: block;
+  }
+  
+  /**
+   * 设置日历顶部盒子
+   */
+  .calendar .calendar-title-box{
+    position: relative;
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    text-align:center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /**
+   * 设置上个月的按钮图标
+   */
+  .calendar .prev-month {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-left: 0px;
+    border-top: 6px solid transparent;
+    border-right: 8px solid #999;
+    border-bottom: 6px solid transparent;
+    cursor: pointer;
+  }
+  
+  /**
+   * 设置下个月的按钮图标
+   */
+  .calendar .next-month {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-right: 0px;
+    border-top: 6px solid transparent;
+    border-left: 8px solid #999;
+    border-bottom: 6px solid transparent;
+    cursor: pointer;
+  }
+  
+  
+  /* 设置日历表格样式 */
+  .calendar-table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align:center;
+  }
+  
+  /* 表格行高 */
+  .calendar-table tr{
+    height: 30px;
+    line-height: 30px;
+  }
+  
+  /* 当前天 颜色特殊显示 */
+  .currentDay {
+    color: red;
+  }
+  
+  /* 本月 文字颜色 */
+  .currentMonth {
+    color: #FDFAFE;
+  }
+  
+  /* 其他月颜色 */
+  .otherMonth{
+    color: #999;
+  }
+
+/* 最新文章 */
+.tj_news{
+    width: 300px;
+    height: 845px;
+    float: right;
+    position: absolute;  
+    margin: 928px 0 0 1320px; 
+    background: #231F23; 
+}
+.tj_t1{
+    border-radius: 0 20px 20px 0;
+    background: #0F9C7C;
+    color:  #FDFAFE;
+    display: block;
+    width: 150px;
+    height: 40px;
+    margin: 20px 0 0 0;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+}
+.tj_news ul{
+    margin: 20px 0 20px 0;
+    color:  #FDFAFE;
+}
+
+.tj_news li{
+    margin: 10px 0 0 35px;
+    color:  #FDFAFE;
+}
+.tj_news li a{
+    color:  #FDFAFE;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    background:#1E1E1E;
+    position: absolute;
+    color: white;
+    clear: both;
+    text-align: center;
+    padding-top: 25px;
+    margin: 1780px 0 0 0;
+}
+
