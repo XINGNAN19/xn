@@ -321,8 +321,8 @@ ul.parent li:hover .lines,.topbar li.current .lines {
 
 /* 阅读全文 */
 a.readmore{
-    background: #e41635;
-    color: #ffffff;
+    /* background: #E7E6E5; */
+    color: #e41635;
     display: block;
     width: 90px;
     height: 30px;
@@ -368,8 +368,8 @@ a.readmore{
     color: #474645; 
 }
 a.readmore_a{
-    background: #e41635;
-    color: #ffffff;
+    /* background: #E7E6E5; */
+    color: #e41635;
     display: block;
     width: 90px;
     height: 30px;
@@ -415,8 +415,8 @@ a.readmore_a{
     color: #474645; 
 }
 a.readmore_b{
-    background: #e41635;
-    color: #ffffff;
+    /* background: #E7E6E5; */
+    color: #e41635;
     display: block;
     width: 90px;
     height: 30px;
@@ -462,8 +462,8 @@ a.readmore_b{
     color: #474645; 
 }
 a.readmore_c{
-    background: #e41635;
-    color: #ffffff;
+    /* background: #E7E6E5; */
+    color: #e41635;
     display: block;
     width: 90px;
     height: 30px;
